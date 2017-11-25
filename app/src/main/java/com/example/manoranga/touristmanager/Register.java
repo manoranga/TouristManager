@@ -7,9 +7,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+
 public class Register extends AppCompatActivity {
     Button regist;
-
+RequestQueue requestQueue;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
