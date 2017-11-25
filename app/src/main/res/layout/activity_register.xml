@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manoranga.touristmanager.Register"
+    android:background="@drawable/back">
+
+    <EditText
+        android:id="@+id/etusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etusername"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:text="username" />
+
+    <TextView
+        android:id="@+id/txtemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtusername"
+        android:layout_alignStart="@+id/txtusername"
+        android:layout_below="@+id/txtusername"
+        android:layout_marginTop="39dp"
+        android:text="email" />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etusername"
+        android:layout_alignStart="@+id/etusername"
+        android:layout_alignTop="@+id/txtemail"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtcountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtusername"
+        android:layout_alignStart="@+id/txtusername"
+        android:layout_below="@+id/etemail"
+        android:layout_marginTop="48dp"
+        android:text="country" />
+
+    <EditText
+        android:id="@+id/etcountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtcountry"
+        android:layout_alignLeft="@+id/etemail"
+        android:layout_alignStart="@+id/etemail"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtcountry"
+        android:layout_alignStart="@+id/txtcountry"
+        android:layout_below="@+id/txtcountry"
+        android:layout_marginTop="64dp"
+        android:text="password" />
+
+    <EditText
+        android:id="@+id/etpasswword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtpassword"
+        android:layout_alignEnd="@+id/etcountry"
+        android:layout_alignRight="@+id/etcountry"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtcpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtpassword"
+        android:layout_alignStart="@+id/txtpassword"
+        android:layout_below="@+id/txtpassword"
+        android:layout_marginTop="43dp"
+        android:text="confirm password" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etpasswword"
+        android:layout_alignRight="@+id/etpasswword"
+        android:layout_below="@+id/etpasswword"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtcpassword"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtcpassword"
+        android:layout_marginBottom="20dp"
+        android:text="REGISTER" />
+</RelativeLayout>
