@@ -49,7 +49,7 @@
         android:layout_alignStart="@+id/etusername"
         android:layout_alignTop="@+id/txtemail"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textEmailAddress" />
 
     <TextView
         android:id="@+id/txtcountry"
@@ -69,7 +69,7 @@
         android:layout_alignLeft="@+id/etemail"
         android:layout_alignStart="@+id/etemail"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="text" />
 
     <TextView
         android:id="@+id/txtpassword"
@@ -89,7 +89,7 @@
         android:layout_alignEnd="@+id/etcountry"
         android:layout_alignRight="@+id/etcountry"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPassword" />
 
     <TextView
         android:id="@+id/txtcpassword"
@@ -110,7 +110,7 @@
         android:layout_below="@+id/etpasswword"
         android:layout_marginTop="31dp"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/button"
