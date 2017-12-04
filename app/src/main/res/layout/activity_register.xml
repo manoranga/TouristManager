@@ -18,6 +18,7 @@
         android:layout_marginRight="19dp"
         android:layout_marginTop="46dp"
         android:ems="10"
+        android:text="prabodha"
         android:inputType="textPersonName" />
 
     <TextView
@@ -49,6 +50,7 @@
         android:layout_alignStart="@+id/etusername"
         android:layout_alignTop="@+id/txtemail"
         android:ems="10"
+        android:text="prabodha@gmail.com"
         android:inputType="textEmailAddress" />
 
     <TextView
@@ -69,6 +71,7 @@
         android:layout_alignLeft="@+id/etemail"
         android:layout_alignStart="@+id/etemail"
         android:ems="10"
+        android:text="srilanka"
         android:inputType="text" />
 
     <TextView
@@ -89,6 +92,7 @@
         android:layout_alignEnd="@+id/etcountry"
         android:layout_alignRight="@+id/etcountry"
         android:ems="10"
+        android:text="123"
         android:inputType="textPassword" />
 
     <TextView
@@ -110,6 +114,7 @@
         android:layout_below="@+id/etpasswword"
         android:layout_marginTop="31dp"
         android:ems="10"
+        android:text="123"
         android:inputType="textPassword" />
 
     <Button

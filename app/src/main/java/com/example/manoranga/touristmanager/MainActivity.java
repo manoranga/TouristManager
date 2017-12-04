@@ -19,47 +19,23 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnRegister;
     Button btnLogin;
-    final String TAG = this.getClass().getSimpleName();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnRegister = (Button)findViewById(R.id.button5);
-        btnLogin =(Button)findViewById(R.id.button3);
+        btnRegister = (Button) findViewById(R.id.button5);
+        btnLogin = (Button) findViewById(R.id.button3);
 
-        btnRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Role.class);
-                startActivity(intent);
-            }
-        });
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Role.class);
-                startActivity(intent);
+                Intent i = new Intent(getApplicationContext(),Tourist_Area.class);
+                startActivity(i);
+
             }
         });
-            String url = "https://www.google.lk/?gfe_rd=cr&dcr=0&ei=xbgZWojPA5PW4gKH7JjwAQ";
-        StringRequest stringRequest = new StringRequest(url, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                Log.d(TAG,response);
-                Toast.makeText(getApplicationContext(),response,LENGTH_SHORT).show();
-
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Toast.makeText(getApplicationContext(),"ERROR", LENGTH_SHORT).show();
-            }
-        });
-        MySingleton.getInstance(this).addToRequestQueue(stringRequest);
-
-}
-
-
+    }
 }

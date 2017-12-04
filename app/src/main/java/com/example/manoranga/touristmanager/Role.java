@@ -22,7 +22,7 @@ public class Role extends AppCompatActivity {
         tourist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), Register.class);
+                Intent intent = new Intent(Role.this, Register.class);
                 startActivity(intent);
             }
         });
