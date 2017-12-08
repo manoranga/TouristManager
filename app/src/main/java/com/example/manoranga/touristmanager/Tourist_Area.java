@@ -23,10 +23,13 @@ public class Tourist_Area extends AppCompatActivity {
 
     private ViewPager mViewPager;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tourist__area);
+
+
 
 
 
