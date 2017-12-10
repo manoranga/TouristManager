@@ -42,7 +42,6 @@
         <activity android:name=".Tourist_Area" />
         <activity android:name=".Thotels" />
         <activity android:name=".TcabService" />
-        <activity android:name=".Ttourguide"></activity>
     </application>
 
 </manifest>

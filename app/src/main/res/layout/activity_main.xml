@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/guideprice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -24,7 +24,7 @@
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignBottom="@+id/guideprice"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginEnd="21dp"
@@ -36,9 +36,9 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView4"
-        android:layout_alignRight="@+id/textView4"
-        android:layout_below="@+id/textView4"
+        android:layout_alignEnd="@+id/guideprice"
+        android:layout_alignRight="@+id/guideprice"
+        android:layout_below="@+id/guideprice"
         android:layout_marginTop="50dp"
         android:text="password" />
 
@@ -66,8 +66,8 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4"
+        android:layout_alignLeft="@+id/guideprice"
+        android:layout_alignStart="@+id/guideprice"
         android:layout_below="@+id/button3"
         android:layout_marginTop="46dp"
         android:text="Not a member? sign up"
