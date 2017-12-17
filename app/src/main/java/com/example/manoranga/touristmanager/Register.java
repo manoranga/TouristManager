@@ -140,8 +140,8 @@ public class Register extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 if(response.contains("successful")){
-                    Toast.makeText(getApplicationContext(),"hhhhhhhhh",Toast.LENGTH_LONG).show();
-                    Intent in = new Intent(getApplicationContext(),Tourist_Area.class);
+                    Toast.makeText(getApplicationContext(),"Registation Successs",Toast.LENGTH_LONG).show();
+                    Intent in = new Intent(getApplicationContext(),MainActivity.class);
                     startActivity(in);
                 } Toast.makeText(getApplicationContext(),response.toString(),Toast.LENGTH_LONG).show();
             }

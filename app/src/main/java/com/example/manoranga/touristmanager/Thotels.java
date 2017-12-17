@@ -30,7 +30,7 @@ public class Thotels extends android.support.v4.app.Fragment {
         hotelDetails = new ArrayList<>();
         for(int x=0 ;x<10;x++){
             HotelDetails list = new HotelDetails("Hotel"+(x+1),"nice",
-                    "http://www145.pair.com/zoom44/RRR/RRR_logo20m.JPG",25,1.2);
+                    "http://www.chandrikahotel.com/images/slider/home/07.jpg",25,1.2);
             hotelDetails.add(list);
         }
 

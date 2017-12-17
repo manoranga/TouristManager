@@ -44,7 +44,8 @@
         <activity android:name=".TcabService" />
         <activity android:name=".Details" />
         <activity android:name=".AboutHotels" />
-        <activity android:name=".AboutCabs"></activity>
+        <activity android:name=".AboutCabs" />
+        <activity android:name=".Chat1"></activity>
     </application>
 
 </manifest>
