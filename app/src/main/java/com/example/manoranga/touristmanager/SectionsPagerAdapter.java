@@ -26,6 +26,8 @@ class SectionsPagerAdapter extends FragmentPagerAdapter {
             case 2:
                 TcabService tcabService = new TcabService();
                 return tcabService;
+
+
         }
         return null;
     }
@@ -45,6 +47,7 @@ class SectionsPagerAdapter extends FragmentPagerAdapter {
                 return "TOURGUIDE";
             case 2:
                 return "CABSERVICE";
+
         }
         return null;
     }

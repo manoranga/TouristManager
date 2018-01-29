@@ -126,4 +126,16 @@
         android:layout_alignStart="@+id/txtcpassword"
         android:layout_marginBottom="20dp"
         android:text="REGISTER" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText7"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="21dp"
+        android:layout_toEndOf="@+id/txtcpassword"
+        android:layout_toRightOf="@+id/txtcpassword"
+        android:text="Button" />
 </RelativeLayout>

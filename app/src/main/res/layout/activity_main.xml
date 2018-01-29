@@ -16,6 +16,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="50dp"
+
         android:layout_marginStart="50dp"
         android:layout_marginTop="67dp"
         android:text="username" />
@@ -30,6 +31,7 @@
         android:layout_marginEnd="21dp"
         android:layout_marginRight="21dp"
         android:ems="10"
+        android:text="prabodha"
         android:inputType="textPersonName" />
 
     <TextView
@@ -50,7 +52,8 @@
         android:layout_alignEnd="@+id/editText3"
         android:layout_alignRight="@+id/editText3"
         android:ems="10"
-        android:inputType="textPersonName" />
+android:text="1234"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/button3"
@@ -71,7 +74,7 @@
         android:layout_alignStart="@+id/guideprice"
         android:layout_below="@+id/button3"
         android:layout_marginTop="46dp"
-        android:text="Not a member? sign up"
+        android:text="Not a member? sign up Our web Site"
         android:textSize="15dp" />
 
     <Button
