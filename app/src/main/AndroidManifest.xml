@@ -20,8 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Role" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Register" />
+        <activity android:name=".LoginTourist" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -35,16 +34,13 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".Tourist_Area" />
-        <activity android:name=".Thotels" />
-        <activity android:name=".TcabService" />
-        <activity android:name=".AboutTourGuide" />
-        <activity android:name=".AboutHotels" />
+        <activity android:name=".ThotelsFragment" />
+        <activity android:name=".TcabServiceFragment" />
+        <activity android:name=".AboutTourGuideActivity" />
+        <activity android:name=".AboutHotelsActivity" />
         <activity android:name=".AboutCabsActivity" />
-        <activity android:name=".Chat1" />
-        <activity android:name=".ChatRoom" />
-        <activity android:name=".Chat_Area" />
-        <activity android:name=".Chat_TourGuide" />
+        <activity android:name=".Chat_AreaActivity" />
+        <activity android:name=".Chat_TourGuideFragment" />
         <activity android:name=".Chat_Tourist" />
         <activity android:name=".ChatActivity" />
         <activity
@@ -54,13 +50,13 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".LoginCab" />
-        <activity android:name=".RoleActivity">
+        <activity android:name=".LoginGuide" />
+        <activity android:name=".SelectRoleActivity">
 
         </activity>
         <activity android:name=".CabCommentActivity" />
         <activity android:name=".CabSelectActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -23,7 +23,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TcabService extends android.support.v4.app.Fragment {
+public class TcabServiceFragment extends android.support.v4.app.Fragment {
     private static final String URL_DATA ="http://teampro.azurewebsites.net/api/CabDetails";
     RecyclerView recyclerView;
     RecyclerView.Adapter adapter;
@@ -64,7 +64,7 @@ public class TcabService extends android.support.v4.app.Fragment {
                                 object.getString("userName"),
                                 object.getString("discription"),
                               //  object.getInt("rank"),
-                                object.getString("currentLocation"),
+                              //  object.getString("currentLocation"),
                                 object.getString("email"),
                                 object.getString("contactNo")
 

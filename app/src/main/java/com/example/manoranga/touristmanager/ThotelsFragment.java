@@ -2,9 +2,9 @@ package com.example.manoranga.touristmanager;
 
 import android.app.Fragment;
 import android.app.ProgressDialog;
+import android.content.Context;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -26,37 +26,31 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ttourguide extends android.support.v4.app.Fragment {
+public class ThotelsFragment extends android.support.v4.app.Fragment {
+    private static final String URL_DATA ="http://teampro.azurewebsites.net/api/Hotel";
     RecyclerView recyclerView;
     RecyclerView.Adapter adapter;
-    List<TourGuideDetails> tourGuideDetails;
-    String URL_DATA ="http://teampro.azurewebsites.net/api/TourGuide/";
+    List<HotelDetails> hotelDetails;
 
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View  rootView = inflater.inflate(R.layout.activity_ttourguide, container, false);
+        View rootView = inflater.inflate(R.layout.activity_thotels, container, false);
 
-        recyclerView =(RecyclerView)rootView.findViewById(R.id.recycleGuide);
+        recyclerView =(RecyclerView) rootView.findViewById(R.id.recycle);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        tourGuideDetails = new ArrayList<>();
+        hotelDetails = new ArrayList<>();
         loadDeatils();
-        return  rootView;
+        return rootView;
         }
 
     public void loadDeatils(){
 
         final ProgressDialog progressDialog = new ProgressDialog(getContext());
-        progressDialog.setMessage("Loding Data.......");
-       // progressDialog.show();
+        progressDialog.setMessage("Loading Data.......");
+        progressDialog.show();
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, URL_DATA, new Response.Listener<String>() {
             @Override
@@ -68,34 +62,28 @@ public class Ttourguide extends android.support.v4.app.Fragment {
 
                     for (int i=0;i<ja.length();i++){
                         JSONObject object = ja.getJSONObject(i);
-
-                        TourGuideDetails items = new TourGuideDetails(
+                        HotelDetails items = new HotelDetails(
+                                object.getInt("hotelId"),
+                                object.getInt(  "rank"),
                                 object.getString("userName"),
-                                object.getString("gender"),
                                 object.getString("discription"),
-                                object.getString("email"),
-                                object.getString("nationality"),
-                                object.getInt("chargePerDay"),
-                              //  object.getInt("preference"),
-                                object.getInt("status"),
-                                object.getInt("rank"),
-                                object.getInt("guideId")
-
-
-
-
+                                object.getString("contact"),
+                                object.getDouble("latitude"),
+                                object.getDouble("longtitude"),
+                                object.getString("email")
 
 
                         );
-                        tourGuideDetails.add(items);
+                        hotelDetails.add(items);
 
                     }
-                    adapter = new TourGuideAdapter(tourGuideDetails,getContext());
+                    adapter = new HotelAdapter(hotelDetails,getContext());
                     recyclerView.setAdapter(adapter);
 
 
                 } catch (JSONException e) {
                     e.printStackTrace();
+                    Toast.makeText(getContext(),"Exception:"+e.getMessage(),Toast.LENGTH_LONG).show();
                 }
 
 
@@ -114,3 +102,4 @@ public class Ttourguide extends android.support.v4.app.Fragment {
         requestQueue.add(stringRequest);
     }
 }
+

@@ -18,14 +18,14 @@ class SectionsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                Thotels thotels = new Thotels();
-                return thotels;
+                ThotelsFragment thotelsFragment = new ThotelsFragment();
+                return thotelsFragment;
             case 1:
-                Ttourguide ttourguide = new Ttourguide();
-                return ttourguide;
+                TtourguideFragment ttourguideFragment = new TtourguideFragment();
+                return ttourguideFragment;
             case 2:
-                TcabService tcabService = new TcabService();
-                return tcabService;
+                TcabServiceFragment tcabServiceFragment = new TcabServiceFragment();
+                return tcabServiceFragment;
 
 
         }

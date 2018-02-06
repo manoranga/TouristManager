@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.manoranga.touristmanager.Ttourguide">
-<android.support.v7.widget.RecyclerView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/recycleGuide">
+    tools:context="com.example.manoranga.touristmanager.TtourguideFragment">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycleGuide">
 
-</android.support.v7.widget.RecyclerView>
+    </android.support.v7.widget.RecyclerView>
 </RelativeLayout>

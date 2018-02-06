@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back"
-    tools:context="com.example.manoranga.touristmanager.MainActivity">
+    tools:context="com.example.manoranga.touristmanager.LoginTourist">
 
 
     <TextView
@@ -52,7 +52,7 @@
         android:layout_alignEnd="@+id/editText3"
         android:layout_alignRight="@+id/editText3"
         android:ems="10"
-android:text="1234"
+android:text="Pro5@"
         android:inputType="textPassword" />
 
     <Button
