@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "842825315808",
+    "firebase_url": "https://touristmanagerchat.firebaseio.com",
+    "project_id": "touristmanagerchat",
+    "storage_bucket": "touristmanagerchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842825315808:android:e0dacaf0aea75cac",
+        "android_client_info": {
+          "package_name": "com.example.manoranga.touristmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842825315808-i1a0cmfbhuf7sk86riujr19gti6chhsu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.manoranga.touristmanager",
+            "certificate_hash": "099cb8dbecd206a23cd8e34c54e9ab93f49b7406"
+          }
+        },
+        {
+          "client_id": "842825315808-dbsbirilhli0ibo4e5crbtqarol5or2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCugM88unK_mUJXDbPIUEuJvZOASyXVnkU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842825315808-dbsbirilhli0ibo4e5crbtqarol5or2t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

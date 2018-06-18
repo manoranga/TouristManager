@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relative">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/contacts_image"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignLeft="@+id/comment_item"
+                android:layout_alignStart="@+id/comment_item"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
+                android:src="@drawable/contacts"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_margin="@dimen/card_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/comment_item"
+            android:layout_marginHorizontal="@dimen/card_margin">
+
+            <TextView
+                android:id="@+id/commentHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Heading"
+                style="@style/Base.AlertDialog.AppCompat"
+                android:textSize="20dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/commentDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Base.AlertDialog.AppCompat"
+                android:text="Description"
+                android:gravity="center"/>
+        </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>
